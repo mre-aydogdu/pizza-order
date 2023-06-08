@@ -23,8 +23,8 @@ namespace Pizza_Order
     public partial class PizzaOrderForm : Form
     {
 
-        // Declaring all the images to resources so it can be used later
-        // Its stored in specific variables and accessed through the Resources folder
+        // Kaynakları Resource olarak sonradan kullanılmak üzere ekliyoruz
+        // Belirli değişkenler üzerinde tutuluyor ve sonrasında Resources klasöründen erişim sağlanıyor
         public Image leftSideJalapeno = Properties.Resource1.LeftSideJalapeno;
         public Image leftSideUnselected = Properties.Resource1.button_left;
         public Image leftSideSelected = Properties.Resource1.button_left_selected;
@@ -49,8 +49,8 @@ namespace Pizza_Order
         public Image DefaultPizza = Properties.Resource1.DefaultPizza;
         public Image LeftHalfPepper = Properties.Resource1.LeftHalfPepper;
 
-        // Initializing the toppings to its cost
-        // Double type since it could have decimal points
+        // Extra malzemelerin ilk fiyatlarını belirledik
+        // Bize uygun olan Double tipini seçiyoruz
         public double Personal = 5.99;
         public double Small = 7.99;
         public double Medium = 9.99;
@@ -70,20 +70,19 @@ namespace Pizza_Order
         public double Spinach = 0.99;
         public double Pineapple = 0.99;
 
-        // Instanting the order invoice form
+        // Sipariş Fatura formunu oluşturduk
         public static OrderInvoiceForm order = new OrderInvoiceForm();
 
-        public static double Cost = 0.00; // Keeps track of total cost before Tax
-        public static double Subtotal = 0.00; // Keeps track of cost after
-        public static double TaxRate = 0.08; // Tax percent 8%
+        public static double Cost = 0.00; // Vergilendirmeden önceki toplam fiyat
+        public static double Subtotal = 0.00; // Sonrasındaki Fiyat
+        public static double TaxRate = 0.18; // Vergi yüzdesi
 
         public PizzaOrderForm()
         {
             InitializeComponent();
         }
 
-        // This method clears the form by creating a instance of the form
-        // by using new keyword
+        // Clear tuşuna basıldığında formu temizlemesi için bir method oluşturduyoruz
         private void ClearButton_Click(object sender, EventArgs e)
         {
 
@@ -93,103 +92,101 @@ namespace Pizza_Order
 
         }
 
-        // This method takes care of everything that happens once the user clicks the submit order button'
-        // It checks to see what radio button clicked and handles the case. Also it prints on the order invoice
-        // form and switches to that form and hides the current form
+        // Bu method Siparişi onayla butonuna basıldıktan sonraki bütün işlemleri halletmek için yapılıyor'
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            // If personal size pizza radio button is checked
+            // Personele özel pizza seçilmiş ise
             if (PersonalRadioButton.Checked == true)
             {
-                // Print on the Order Invoice form
-                ListViewItem item = new ListViewItem("Personal Pizza Size");
-                item.SubItems.Add("5.99");
+                
+                ListViewItem item = new ListViewItem("Personel Pizzası Boyutu");
+                item.SubItems.Add("50");
                 order.SubTotalListView.Items.Add(item); // add it to the list view
             }
-            // If small size pizza radio button is checked
+            // Küçük pizza boyutu seçilmiş ise
             else if (SmallRadioButton.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Small Pizza Size");
-                item.SubItems.Add("7.99");
+                ListViewItem item = new ListViewItem("Küçük Pizza Boyutu");
+                item.SubItems.Add("70");
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If medium size pizza radio button is checked
+            // Orta boy Pizza seçilmiş ise
             else if (MediumRadioButton.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Medium Pizza Size");
-                item.SubItems.Add("9.99");
+                ListViewItem item = new ListViewItem("Orta Pizza Boyutu");
+                item.SubItems.Add("90");
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If large size pizza radio button is checked
+            // Büyük Boy pizza seçilmiş ise
             else if (LargeRadioButton.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Large Pizza Size");
-                item.SubItems.Add("12.99");
+                ListViewItem item = new ListViewItem("Büyük Pizza Boyutu");
+                item.SubItems.Add("120");
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If cheddar topping is checked 
+            // Extra Cheddar seçili ise
             if (CheddarCheckBox.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Cheddar Cheese Topping");
+                ListViewItem item = new ListViewItem("Cheddar Peynirli");
                 item.SubItems.Add("0.99");
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If Alfredo topping is checked 
+            // Extra alfredo malzemesi var ise 
             if (AlfredoCheckBox.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Alfredo Sauce");
+                ListViewItem item = new ListViewItem("Alfredo Soslu");
                 item.SubItems.Add("0.99");
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If Tomato topping is checked 
+            // Eğer Domates eklenmişse 
             if (TomatoCheckBox.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Tomato Sauce");
+                ListViewItem item = new ListViewItem("Domates Soslu");
                 item.SubItems.Add("0.99");
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If Mozarella topping is checked 
+            // Eğer extra mozarella seçilmiş ise 
             if (MozarellaCheckBox.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Mozarella Cheese Topping");
+                ListViewItem item = new ListViewItem("Mozarella Peynirli");
                 item.SubItems.Add("0.99");
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If Feta topping is checked 
+            // Eğer extra beyaz peynir seçilmiş ise 
             if (FetaCheckBox.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Feta Cheese Topping");
+                ListViewItem item = new ListViewItem("Beyaz Peynirli");
                 item.SubItems.Add("0.99");
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If chicken topping is checked 
+            // Eğer extra tavuk seçilmiş ise
             if (ChickenCheckBox.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Chicken Topping");
+                ListViewItem item = new ListViewItem("Tavuklu");
                 item.SubItems.Add("0.99");
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If pepperoni topping is checked 
+            // Eğer pepperoni extra eklenmiş ise 
             if (PepperoniCheckBox.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Pepperoni Topping");
+                ListViewItem item = new ListViewItem("Pepperonili");
                 item.SubItems.Add("0.99");
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If Sausage topping is checked 
+            // Eğer sosis eklenmiş ise 
             if (SausageCheckBox.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Sausage Topping");
+                ListViewItem item = new ListViewItem("Sosisli");
                 item.SubItems.Add("0.99");
                 order.SubTotalListView.Items.Add(item);
             }
@@ -197,7 +194,7 @@ namespace Pizza_Order
             // If Onion topping is checked 
             if (OnionCheckBox.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Onion Topping");
+                ListViewItem item = new ListViewItem("Soğanlı");
                 item.SubItems.Add("0.99");
                 order.SubTotalListView.Items.Add(item);
             }
@@ -205,7 +202,7 @@ namespace Pizza_Order
             // If Mushroom topping is checked 
             if (MushroomCheckBox.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Mushroom Topping");
+                ListViewItem item = new ListViewItem("Mantarlı");
                 item.SubItems.Add("0.99");
                 order.SubTotalListView.Items.Add(item);
             }
@@ -213,7 +210,7 @@ namespace Pizza_Order
             // If Spinach topping is checked 
             if (SpinachCheckBox.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Spinach Topping");
+                ListViewItem item = new ListViewItem("Ispannaklı");
                 item.SubItems.Add("0.99");
                 order.SubTotalListView.Items.Add(item);
             }
@@ -221,7 +218,7 @@ namespace Pizza_Order
             // If Pineapple topping is checked 
             if (PineapplecheckBox.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Pineapple Topping");
+                ListViewItem item = new ListViewItem("Ananaslı");
                 item.SubItems.Add("0.99");
                 order.SubTotalListView.Items.Add(item);
             }
@@ -229,7 +226,7 @@ namespace Pizza_Order
             // If GreenPepper topping is checked 
             if (GreenPeppersCheckBox.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Green Peppers Topping");
+                ListViewItem item = new ListViewItem("Yeşil Biberli");
                 item.SubItems.Add("0.99");
                 order.SubTotalListView.Items.Add(item);
             }
@@ -237,7 +234,7 @@ namespace Pizza_Order
             // If Jalapeno topping is checked 
             if (JalapenoCheckBox.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Jalapeno Topping");
+                ListViewItem item = new ListViewItem("Jalapenolu");
                 item.SubItems.Add("0.99");
                 order.SubTotalListView.Items.Add(item);
             }

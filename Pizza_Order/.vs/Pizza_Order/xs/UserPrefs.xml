@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{20078069-DC24-4BCB-8FA0-668AE526F372}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pizza_Order/OrderForm.Designer.cs">
+    <Files>
+      <File FileName="Pizza_Order/Program.cs" Line="1" Column="1" />
+      <File FileName="Pizza_Order/OrderInvoiceForm.resx" Line="1" Column="1" />
+      <File FileName="Pizza_Order/OrderInvoiceForm.Designer.cs" Line="1" Column="1" />
+      <File FileName="Pizza_Order/OrderForm.resx" Line="1" Column="1" />
+      <File FileName="Pizza_Order/OrderForm.Designer.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Pizza_Order" expanded="True">
+            <Node name="Pizza_Order" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Pizza__Order PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
