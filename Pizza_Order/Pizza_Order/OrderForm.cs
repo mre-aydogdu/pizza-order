@@ -82,7 +82,7 @@ namespace Pizza_Order
             InitializeComponent();
         }
 
-        // Clear tuşuna basıldığında formu temizlemesi için bir method oluşturduyoruz
+        // Clear tuşuna basıldığında formu temizlemesi için bir method oluşturduyoruz 
         private void ClearButton_Click(object sender, EventArgs e)
         {
 
