@@ -135,7 +135,7 @@
             this.largePriceLabel.Name = "largePriceLabel";
             this.largePriceLabel.Size = new System.Drawing.Size(40, 13);
             this.largePriceLabel.TabIndex = 7;
-            this.largePriceLabel.Text = "$12.99";
+            this.largePriceLabel.Text = "₺12.99";
             // 
             // OrtaPizza etiketleri
             // 
@@ -144,7 +144,7 @@
             this.mediumPriceLabel.Name = "mediumPriceLabel";
             this.mediumPriceLabel.Size = new System.Drawing.Size(34, 13);
             this.mediumPriceLabel.TabIndex = 6;
-            this.mediumPriceLabel.Text = "$9.99";
+            this.mediumPriceLabel.Text = "₺9.99";
             // 
             // KüçükPizza Etiketleri
             // 
@@ -153,7 +153,7 @@
             this.smallPriceLabel.Name = "smallPriceLabel";
             this.smallPriceLabel.Size = new System.Drawing.Size(34, 13);
             this.smallPriceLabel.TabIndex = 5;
-            this.smallPriceLabel.Text = "$7.99";
+            this.smallPriceLabel.Text = "₺7.99";
             // 
             // PersonelPizza Etiketleri
             // 
@@ -162,7 +162,7 @@
             this.personalPriceLabel.Name = "personalPriceLabel";
             this.personalPriceLabel.Size = new System.Drawing.Size(34, 13);
             this.personalPriceLabel.TabIndex = 4;
-            this.personalPriceLabel.Text = "$5.99";
+            this.personalPriceLabel.Text = "₺5.99";
             // 
             // 
             // 
@@ -172,7 +172,7 @@
             this.LargeRadioButton.Size = new System.Drawing.Size(52, 17);
             this.LargeRadioButton.TabIndex = 3;
             this.LargeRadioButton.TabStop = true;
-            this.LargeRadioButton.Text = "Large";
+            this.LargeRadioButton.Text = "Büyük";
             this.LargeRadioButton.UseVisualStyleBackColor = true;
 
             // 
@@ -184,7 +184,7 @@
             this.MediumRadioButton.Size = new System.Drawing.Size(62, 17);
             this.MediumRadioButton.TabIndex = 2;
             this.MediumRadioButton.TabStop = true;
-            this.MediumRadioButton.Text = "Medium";
+            this.MediumRadioButton.Text = "Orta";
             this.MediumRadioButton.UseVisualStyleBackColor = true;
 
             // 
@@ -196,7 +196,7 @@
             this.SmallRadioButton.Size = new System.Drawing.Size(50, 17);
             this.SmallRadioButton.TabIndex = 1;
             this.SmallRadioButton.TabStop = true;
-            this.SmallRadioButton.Text = "Small";
+            this.SmallRadioButton.Text = "Küçük";
             this.SmallRadioButton.UseVisualStyleBackColor = true;
   
             // 
@@ -208,7 +208,7 @@
             this.PersonalRadioButton.Size = new System.Drawing.Size(66, 17);
             this.PersonalRadioButton.TabIndex = 0;
             this.PersonalRadioButton.TabStop = true;
-            this.PersonalRadioButton.Text = "Personal";
+            this.PersonalRadioButton.Text = "Personel";
             this.PersonalRadioButton.UseVisualStyleBackColor = true;
     
             // 
@@ -219,7 +219,7 @@
             this.PizzaSizeLabel.Name = "PizzaSizeLabel";
             this.PizzaSizeLabel.Size = new System.Drawing.Size(109, 13);
             this.PizzaSizeLabel.TabIndex = 1;
-            this.PizzaSizeLabel.Text = "Select your Pizza size";
+            this.PizzaSizeLabel.Text = "Pizza Boyutunuzu Seçiniz";
             // 
             // Pizza Tipi
             // 
@@ -242,7 +242,7 @@
             this.BuildOwnRadioButton.Size = new System.Drawing.Size(96, 17);
             this.BuildOwnRadioButton.TabIndex = 4;
             this.BuildOwnRadioButton.TabStop = true;
-            this.BuildOwnRadioButton.Text = "Build your Own";
+            this.BuildOwnRadioButton.Text = "Kendi pizzanı kendin yap";
             this.BuildOwnRadioButton.UseVisualStyleBackColor = true;
             this.BuildOwnRadioButton.CheckedChanged += new System.EventHandler(this.BuildOwnRadioButton_CheckedChanged);
             // 
@@ -254,7 +254,7 @@
             this.CaterinasItalianoRadioButton.Size = new System.Drawing.Size(108, 17);
             this.CaterinasItalianoRadioButton.TabIndex = 3;
             this.CaterinasItalianoRadioButton.TabStop = true;
-            this.CaterinasItalianoRadioButton.Text = "Caterina\'s Italiano";
+            this.CaterinasItalianoRadioButton.Text = "İtalyano Pizza";
             this.CaterinasItalianoRadioButton.UseVisualStyleBackColor = true;
             // 
             // PeynirSever Butonu
@@ -265,7 +265,7 @@
             this.CheeseLoversRadioButton.Size = new System.Drawing.Size(96, 17);
             this.CheeseLoversRadioButton.TabIndex = 2;
             this.CheeseLoversRadioButton.TabStop = true;
-            this.CheeseLoversRadioButton.Text = "Cheese Lovers";
+            this.CheeseLoversRadioButton.Text = "Peynir Sever";
             this.CheeseLoversRadioButton.UseVisualStyleBackColor = true;
             // 
             // Sebze Sever butonu
@@ -276,7 +276,7 @@
             this.VeggieLoverRadioButton.Size = new System.Drawing.Size(93, 17);
             this.VeggieLoverRadioButton.TabIndex = 1;
             this.VeggieLoverRadioButton.TabStop = true;
-            this.VeggieLoverRadioButton.Text = "Veggie Lovers";
+            this.VeggieLoverRadioButton.Text = "Sebze Sever";
             this.VeggieLoverRadioButton.UseVisualStyleBackColor = true;
             // 
             // Et sever Butonu
@@ -287,7 +287,7 @@
             this.MeatLoverRadioButton.Size = new System.Drawing.Size(84, 17);
             this.MeatLoverRadioButton.TabIndex = 0;
             this.MeatLoverRadioButton.TabStop = true;
-            this.MeatLoverRadioButton.Text = "Meat Lovers";
+            this.MeatLoverRadioButton.Text = "Et Sever";
             this.MeatLoverRadioButton.UseVisualStyleBackColor = true;
             // 
             // 
@@ -297,7 +297,7 @@
             this.PizzaTypeLabel.Name = "PizzaTypeLabel";
             this.PizzaTypeLabel.Size = new System.Drawing.Size(111, 13);
             this.PizzaTypeLabel.TabIndex = 3;
-            this.PizzaTypeLabel.Text = "Select your Pizza type";
+            this.PizzaTypeLabel.Text = "Pizza Çeşidinizi Seçiniz";
             // 
             // 
             // 
@@ -306,7 +306,7 @@
             this.CustomizeLabel.Name = "CustomizeLabel";
             this.CustomizeLabel.Size = new System.Drawing.Size(106, 13);
             this.CustomizeLabel.TabIndex = 5;
-            this.CustomizeLabel.Text = "Customize your Pizza";
+            this.CustomizeLabel.Text = "Pizzanı özelleştir";
             // 
             // Onayla Butonu
             // 
@@ -314,7 +314,7 @@
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(106, 23);
             this.SubmitButton.TabIndex = 6;
-            this.SubmitButton.Text = "Submit Order";
+            this.SubmitButton.Text = "Siparişi Onayla";
             this.SubmitButton.UseVisualStyleBackColor = true;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
@@ -324,7 +324,7 @@
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(115, 23);
             this.ClearButton.TabIndex = 7;
-            this.ClearButton.Text = "Clear Order";
+            this.ClearButton.Text = "Siparişi Temizle";
             this.ClearButton.UseVisualStyleBackColor = true;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
@@ -346,7 +346,7 @@
             this.TomatoCheckBox.Name = "TomatoCheckBox";
             this.TomatoCheckBox.Size = new System.Drawing.Size(62, 17);
             this.TomatoCheckBox.TabIndex = 1;
-            this.TomatoCheckBox.Text = "Tomato";
+            this.TomatoCheckBox.Text = "Domates";
             this.TomatoCheckBox.UseVisualStyleBackColor = true;
             this.TomatoCheckBox.CheckedChanged += new System.EventHandler(this.TomatoCheckBox_CheckedChanged);
             // 
@@ -357,7 +357,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Select your Sauce type";
+            this.label1.Text = "Sos Tipinizi Seçiniz";
             // 
             // 
             // 
@@ -366,7 +366,7 @@
             this.MeatTypeLabel.Name = "MeatTypeLabel";
             this.MeatTypeLabel.Size = new System.Drawing.Size(174, 13);
             this.MeatTypeLabel.TabIndex = 3;
-            this.MeatTypeLabel.Text = "Select all the Meat you want to add";
+            this.MeatTypeLabel.Text = "Eklemek istediğiniz bütüün etleri seçiniz";
             // 
             // 
             // 
@@ -375,7 +375,7 @@
             this.ChickenCheckBox.Name = "ChickenCheckBox";
             this.ChickenCheckBox.Size = new System.Drawing.Size(65, 17);
             this.ChickenCheckBox.TabIndex = 4;
-            this.ChickenCheckBox.Text = "Chicken";
+            this.ChickenCheckBox.Text = "Tavuk";
             this.ChickenCheckBox.UseVisualStyleBackColor = true;
  
             // 
@@ -397,7 +397,7 @@
             this.SausageCheckBox.Name = "SausageCheckBox";
             this.SausageCheckBox.Size = new System.Drawing.Size(68, 17);
             this.SausageCheckBox.TabIndex = 6;
-            this.SausageCheckBox.Text = "Sausage";
+            this.SausageCheckBox.Text = "Sosis";
             this.SausageCheckBox.UseVisualStyleBackColor = true;
 
             // 
@@ -408,7 +408,7 @@
             this.CheeseTypeLabel.Name = "CheeseTypeLabel";
             this.CheeseTypeLabel.Size = new System.Drawing.Size(126, 13);
             this.CheeseTypeLabel.TabIndex = 7;
-            this.CheeseTypeLabel.Text = "Select your Cheese Type";
+            this.CheeseTypeLabel.Text = "Peynir çeşidinizi Seçiniz";
             // 
             // 
             // 
@@ -439,7 +439,7 @@
             this.FetaCheckBox.Name = "FetaCheckBox";
             this.FetaCheckBox.Size = new System.Drawing.Size(47, 17);
             this.FetaCheckBox.TabIndex = 10;
-            this.FetaCheckBox.Text = "Feta";
+            this.FetaCheckBox.Text = "Beyaz Peynir";
             this.FetaCheckBox.UseVisualStyleBackColor = true;
 
             // 
@@ -450,7 +450,7 @@
             this.VeggiesLabel.Name = "VeggiesLabel";
             this.VeggiesLabel.Size = new System.Drawing.Size(188, 13);
             this.VeggiesLabel.TabIndex = 11;
-            this.VeggiesLabel.Text = "Select all the Veggies you want to add";
+            this.VeggiesLabel.Text = "Eklemek İstediğiniz Sebze çeşitlerini seçiniz";
             // 
             // 
             // 
@@ -459,7 +459,7 @@
             this.OnionCheckBox.Name = "OnionCheckBox";
             this.OnionCheckBox.Size = new System.Drawing.Size(59, 17);
             this.OnionCheckBox.TabIndex = 12;
-            this.OnionCheckBox.Text = "Onions";
+            this.OnionCheckBox.Text = "Soğan";
             this.OnionCheckBox.UseVisualStyleBackColor = true;
 
             // 
@@ -470,7 +470,7 @@
             this.GreenPeppersCheckBox.Name = "GreenPeppersCheckBox";
             this.GreenPeppersCheckBox.Size = new System.Drawing.Size(97, 17);
             this.GreenPeppersCheckBox.TabIndex = 13;
-            this.GreenPeppersCheckBox.Text = "Green Peppers";
+            this.GreenPeppersCheckBox.Text = "Yeşil Biber";
             this.GreenPeppersCheckBox.UseVisualStyleBackColor = true;
 
             // 
@@ -481,7 +481,7 @@
             this.MushroomCheckBox.Name = "MushroomCheckBox";
             this.MushroomCheckBox.Size = new System.Drawing.Size(75, 17);
             this.MushroomCheckBox.TabIndex = 14;
-            this.MushroomCheckBox.Text = "Mushroom";
+            this.MushroomCheckBox.Text = "Mantar";
             this.MushroomCheckBox.UseVisualStyleBackColor = true;
 
             // 
@@ -492,7 +492,7 @@
             this.JalapenoCheckBox.Name = "JalapenoCheckBox";
             this.JalapenoCheckBox.Size = new System.Drawing.Size(69, 17);
             this.JalapenoCheckBox.TabIndex = 15;
-            this.JalapenoCheckBox.Text = "Jalapeno";
+            this.JalapenoCheckBox.Text = "Jalapeno Biber";
             this.JalapenoCheckBox.UseVisualStyleBackColor = true;
 
             // 
@@ -503,7 +503,7 @@
             this.SpinachCheckBox.Name = "SpinachCheckBox";
             this.SpinachCheckBox.Size = new System.Drawing.Size(65, 17);
             this.SpinachCheckBox.TabIndex = 16;
-            this.SpinachCheckBox.Text = "Spinach";
+            this.SpinachCheckBox.Text = "Ispanak";
             this.SpinachCheckBox.UseVisualStyleBackColor = true;
 
             // 
@@ -514,7 +514,7 @@
             this.PineapplecheckBox.Name = "PineapplecheckBox";
             this.PineapplecheckBox.Size = new System.Drawing.Size(73, 17);
             this.PineapplecheckBox.TabIndex = 17;
-            this.PineapplecheckBox.Text = "Pineapple";
+            this.PineapplecheckBox.Text = "Ananas";
             this.PineapplecheckBox.UseVisualStyleBackColor = true;
  
             // 
@@ -525,7 +525,7 @@
             this.priceLabel.Name = "priceLabel";
             this.priceLabel.Size = new System.Drawing.Size(70, 13);
             this.priceLabel.TabIndex = 18;
-            this.priceLabel.Text = "+ $0.99 each";
+            this.priceLabel.Text = "+ ₺0.99 extra";
             // 
             // KendinYap Grup
             // 
@@ -781,7 +781,7 @@
             this.Controls.Add(this.PizzaSizeLabel);
             this.Controls.Add(this.PizzaSizeGroupBox);
             this.Name = "PizzaOrderForm";
-            this.Text = "Welcome to VV Pizza!";
+            this.Text = "Dodinos Pizzaya Hoş Geldiniz!";
             this.Load += new System.EventHandler(this.PizzaOrderForm_Load);
             this.PizzaSizeGroupBox.ResumeLayout(false);
             this.PizzaSizeGroupBox.PerformLayout();
