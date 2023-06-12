@@ -2,15 +2,14 @@
 {
     partial class PizzaOrderForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
+        /// <özet>
+        /// .
+        /// </özet>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <özet>
+        /// kullanılan bütün kaynakları sıfırla.
+        /// </özet>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +21,9 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
+        /// <özet>
+        /// Tasarım desteği halinde ihtiyaç duyulur - lütfen bu metodun içeriğini kod editörüyle düzenlemeyiniz!!!
+        /// </özet>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PizzaOrderForm));
@@ -114,7 +112,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PizzaPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // PizzaSizeGroupBox
+            // PizzaBoyutu
             // 
             this.PizzaSizeGroupBox.Controls.Add(this.largePriceLabel);
             this.PizzaSizeGroupBox.Controls.Add(this.mediumPriceLabel);
@@ -130,7 +128,7 @@
             this.PizzaSizeGroupBox.TabIndex = 0;
             this.PizzaSizeGroupBox.TabStop = false;
             // 
-            // largePriceLabel
+            // Büyükpizza etiketleri
             // 
             this.largePriceLabel.AutoSize = true;
             this.largePriceLabel.Location = new System.Drawing.Point(87, 140);
@@ -139,7 +137,7 @@
             this.largePriceLabel.TabIndex = 7;
             this.largePriceLabel.Text = "$12.99";
             // 
-            // mediumPriceLabel
+            // OrtaPizza etiketleri
             // 
             this.mediumPriceLabel.AutoSize = true;
             this.mediumPriceLabel.Location = new System.Drawing.Point(88, 100);
@@ -148,7 +146,7 @@
             this.mediumPriceLabel.TabIndex = 6;
             this.mediumPriceLabel.Text = "$9.99";
             // 
-            // smallPriceLabel
+            // KüçükPizza Etiketleri
             // 
             this.smallPriceLabel.AutoSize = true;
             this.smallPriceLabel.Location = new System.Drawing.Point(89, 59);
@@ -157,7 +155,7 @@
             this.smallPriceLabel.TabIndex = 5;
             this.smallPriceLabel.Text = "$7.99";
             // 
-            // personalPriceLabel
+            // PersonelPizza Etiketleri
             // 
             this.personalPriceLabel.AutoSize = true;
             this.personalPriceLabel.Location = new System.Drawing.Point(89, 21);
@@ -166,7 +164,7 @@
             this.personalPriceLabel.TabIndex = 4;
             this.personalPriceLabel.Text = "$5.99";
             // 
-            // LargeRadioButton
+            // 
             // 
             this.LargeRadioButton.AutoSize = true;
             this.LargeRadioButton.Location = new System.Drawing.Point(20, 138);
@@ -178,7 +176,7 @@
             this.LargeRadioButton.UseVisualStyleBackColor = true;
 
             // 
-            // MediumRadioButton
+            // 
             // 
             this.MediumRadioButton.AutoSize = true;
             this.MediumRadioButton.Location = new System.Drawing.Point(20, 98);
@@ -190,7 +188,7 @@
             this.MediumRadioButton.UseVisualStyleBackColor = true;
 
             // 
-            // SmallRadioButton
+            // 
             // 
             this.SmallRadioButton.AutoSize = true;
             this.SmallRadioButton.Location = new System.Drawing.Point(20, 59);
@@ -202,7 +200,7 @@
             this.SmallRadioButton.UseVisualStyleBackColor = true;
   
             // 
-            // PersonalRadioButton
+            // 
             // 
             this.PersonalRadioButton.AutoSize = true;
             this.PersonalRadioButton.Location = new System.Drawing.Point(20, 19);
@@ -214,7 +212,7 @@
             this.PersonalRadioButton.UseVisualStyleBackColor = true;
     
             // 
-            // PizzaSizeLabel
+            // Pizza Boyutu
             // 
             this.PizzaSizeLabel.AutoSize = true;
             this.PizzaSizeLabel.Location = new System.Drawing.Point(47, 12);
@@ -223,7 +221,7 @@
             this.PizzaSizeLabel.TabIndex = 1;
             this.PizzaSizeLabel.Text = "Select your Pizza size";
             // 
-            // PizzaTypeGroupBox
+            // Pizza Tipi
             // 
             this.PizzaTypeGroupBox.Controls.Add(this.BuildOwnRadioButton);
             this.PizzaTypeGroupBox.Controls.Add(this.CaterinasItalianoRadioButton);
@@ -236,7 +234,7 @@
             this.PizzaTypeGroupBox.TabIndex = 2;
             this.PizzaTypeGroupBox.TabStop = false;
             // 
-            // BuildOwnRadioButton
+            // KendinYap Butonu
             // 
             this.BuildOwnRadioButton.AutoSize = true;
             this.BuildOwnRadioButton.Location = new System.Drawing.Point(23, 180);
@@ -248,7 +246,7 @@
             this.BuildOwnRadioButton.UseVisualStyleBackColor = true;
             this.BuildOwnRadioButton.CheckedChanged += new System.EventHandler(this.BuildOwnRadioButton_CheckedChanged);
             // 
-            // CaterinasItalianoRadioButton
+            // 
             // 
             this.CaterinasItalianoRadioButton.AutoSize = true;
             this.CaterinasItalianoRadioButton.Location = new System.Drawing.Point(22, 138);
@@ -259,7 +257,7 @@
             this.CaterinasItalianoRadioButton.Text = "Caterina\'s Italiano";
             this.CaterinasItalianoRadioButton.UseVisualStyleBackColor = true;
             // 
-            // CheeseLoversRadioButton
+            // PeynirSever Butonu
             // 
             this.CheeseLoversRadioButton.AutoSize = true;
             this.CheeseLoversRadioButton.Location = new System.Drawing.Point(22, 98);
@@ -270,7 +268,7 @@
             this.CheeseLoversRadioButton.Text = "Cheese Lovers";
             this.CheeseLoversRadioButton.UseVisualStyleBackColor = true;
             // 
-            // VeggieLoverRadioButton
+            // Sebze Sever butonu
             // 
             this.VeggieLoverRadioButton.AutoSize = true;
             this.VeggieLoverRadioButton.Location = new System.Drawing.Point(22, 59);
@@ -281,7 +279,7 @@
             this.VeggieLoverRadioButton.Text = "Veggie Lovers";
             this.VeggieLoverRadioButton.UseVisualStyleBackColor = true;
             // 
-            // MeatLoverRadioButton
+            // Et sever Butonu
             // 
             this.MeatLoverRadioButton.AutoSize = true;
             this.MeatLoverRadioButton.Location = new System.Drawing.Point(23, 19);
@@ -292,7 +290,7 @@
             this.MeatLoverRadioButton.Text = "Meat Lovers";
             this.MeatLoverRadioButton.UseVisualStyleBackColor = true;
             // 
-            // PizzaTypeLabel
+            // 
             // 
             this.PizzaTypeLabel.AutoSize = true;
             this.PizzaTypeLabel.Location = new System.Drawing.Point(229, 12);
@@ -301,7 +299,7 @@
             this.PizzaTypeLabel.TabIndex = 3;
             this.PizzaTypeLabel.Text = "Select your Pizza type";
             // 
-            // CustomizeLabel
+            // 
             // 
             this.CustomizeLabel.AutoSize = true;
             this.CustomizeLabel.Location = new System.Drawing.Point(432, 12);
@@ -310,7 +308,7 @@
             this.CustomizeLabel.TabIndex = 5;
             this.CustomizeLabel.Text = "Customize your Pizza";
             // 
-            // SubmitButton
+            // Onayla Butonu
             // 
             this.SubmitButton.Location = new System.Drawing.Point(39, 261);
             this.SubmitButton.Name = "SubmitButton";
@@ -320,7 +318,7 @@
             this.SubmitButton.UseVisualStyleBackColor = true;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
-            // ClearButton
+            // Temizle Butonu
             // 
             this.ClearButton.Location = new System.Drawing.Point(209, 261);
             this.ClearButton.Name = "ClearButton";
@@ -330,7 +328,7 @@
             this.ClearButton.UseVisualStyleBackColor = true;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
-            // AlfredoCheckBox
+            // 
             // 
             this.AlfredoCheckBox.AutoSize = true;
             this.AlfredoCheckBox.Location = new System.Drawing.Point(6, 37);
@@ -341,7 +339,7 @@
             this.AlfredoCheckBox.UseVisualStyleBackColor = true;
             this.AlfredoCheckBox.CheckedChanged += new System.EventHandler(this.AlfredoCheckBox_CheckedChanged);
             // 
-            // TomatoCheckBox
+            // 
             // 
             this.TomatoCheckBox.AutoSize = true;
             this.TomatoCheckBox.Location = new System.Drawing.Point(6, 60);
@@ -361,7 +359,7 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Select your Sauce type";
             // 
-            // MeatTypeLabel
+            // 
             // 
             this.MeatTypeLabel.AutoSize = true;
             this.MeatTypeLabel.Location = new System.Drawing.Point(4, 80);
@@ -370,7 +368,7 @@
             this.MeatTypeLabel.TabIndex = 3;
             this.MeatTypeLabel.Text = "Select all the Meat you want to add";
             // 
-            // ChickenCheckBox
+            // 
             // 
             this.ChickenCheckBox.AutoSize = true;
             this.ChickenCheckBox.Location = new System.Drawing.Point(7, 102);
@@ -381,7 +379,7 @@
             this.ChickenCheckBox.UseVisualStyleBackColor = true;
  
             // 
-            // PepperoniCheckBox
+            // 
             // 
             this.PepperoniCheckBox.AutoSize = true;
             this.PepperoniCheckBox.Location = new System.Drawing.Point(6, 125);
@@ -392,7 +390,7 @@
             this.PepperoniCheckBox.UseVisualStyleBackColor = true;
 
             // 
-            // SausageCheckBox
+            // 
             // 
             this.SausageCheckBox.AutoSize = true;
             this.SausageCheckBox.Location = new System.Drawing.Point(6, 148);
@@ -403,7 +401,7 @@
             this.SausageCheckBox.UseVisualStyleBackColor = true;
 
             // 
-            // CheeseTypeLabel
+            // 
             // 
             this.CheeseTypeLabel.AutoSize = true;
             this.CheeseTypeLabel.Location = new System.Drawing.Point(188, 16);
@@ -412,7 +410,7 @@
             this.CheeseTypeLabel.TabIndex = 7;
             this.CheeseTypeLabel.Text = "Select your Cheese Type";
             // 
-            // CheddarCheckBox
+            // 
             // 
             this.CheddarCheckBox.AutoSize = true;
             this.CheddarCheckBox.Location = new System.Drawing.Point(201, 37);
@@ -423,7 +421,7 @@
             this.CheddarCheckBox.UseVisualStyleBackColor = true;
 
             // 
-            // MozarellaCheckBox
+            // 
             // 
             this.MozarellaCheckBox.AutoSize = true;
             this.MozarellaCheckBox.Location = new System.Drawing.Point(201, 60);
@@ -434,7 +432,7 @@
             this.MozarellaCheckBox.UseVisualStyleBackColor = true;
 
             // 
-            // FetaCheckBox
+            // Beyaz Peynir Butonu
             // 
             this.FetaCheckBox.AutoSize = true;
             this.FetaCheckBox.Location = new System.Drawing.Point(201, 80);
@@ -445,7 +443,7 @@
             this.FetaCheckBox.UseVisualStyleBackColor = true;
 
             // 
-            // VeggiesLabel
+            // 
             // 
             this.VeggiesLabel.AutoSize = true;
             this.VeggiesLabel.Location = new System.Drawing.Point(4, 175);
@@ -454,7 +452,7 @@
             this.VeggiesLabel.TabIndex = 11;
             this.VeggiesLabel.Text = "Select all the Veggies you want to add";
             // 
-            // OnionCheckBox
+            // 
             // 
             this.OnionCheckBox.AutoSize = true;
             this.OnionCheckBox.Location = new System.Drawing.Point(7, 191);
@@ -465,7 +463,7 @@
             this.OnionCheckBox.UseVisualStyleBackColor = true;
 
             // 
-            // GreenPeppersCheckBox
+            // 
             // 
             this.GreenPeppersCheckBox.AutoSize = true;
             this.GreenPeppersCheckBox.Location = new System.Drawing.Point(6, 229);
@@ -476,7 +474,7 @@
             this.GreenPeppersCheckBox.UseVisualStyleBackColor = true;
 
             // 
-            // MushroomCheckBox
+            // Mantar Butonu
             // 
             this.MushroomCheckBox.AutoSize = true;
             this.MushroomCheckBox.Location = new System.Drawing.Point(7, 264);
@@ -487,7 +485,7 @@
             this.MushroomCheckBox.UseVisualStyleBackColor = true;
 
             // 
-            // JalapenoCheckBox
+            // 
             // 
             this.JalapenoCheckBox.AutoSize = true;
             this.JalapenoCheckBox.Location = new System.Drawing.Point(7, 307);
@@ -498,7 +496,7 @@
             this.JalapenoCheckBox.UseVisualStyleBackColor = true;
 
             // 
-            // SpinachCheckBox
+            // Ispanak Butonu
             // 
             this.SpinachCheckBox.AutoSize = true;
             this.SpinachCheckBox.Location = new System.Drawing.Point(7, 352);
@@ -509,7 +507,7 @@
             this.SpinachCheckBox.UseVisualStyleBackColor = true;
 
             // 
-            // PineapplecheckBox
+            // Ananas Butonu
             // 
             this.PineapplecheckBox.AutoSize = true;
             this.PineapplecheckBox.Location = new System.Drawing.Point(7, 394);
@@ -520,7 +518,7 @@
             this.PineapplecheckBox.UseVisualStyleBackColor = true;
  
             // 
-            // priceLabel
+            // Fiyat Etiketi
             // 
             this.priceLabel.AutoSize = true;
             this.priceLabel.Location = new System.Drawing.Point(544, 12);
@@ -529,7 +527,7 @@
             this.priceLabel.TabIndex = 18;
             this.priceLabel.Text = "+ $0.99 each";
             // 
-            // BuildOwnGroupBox
+            // KendinYap Grup
             // 
             this.BuildOwnGroupBox.Controls.Add(this.PineappleLeftPictureBox);
             this.BuildOwnGroupBox.Controls.Add(this.PineappleRightPictureBox);
@@ -574,7 +572,7 @@
             this.BuildOwnGroupBox.TabIndex = 4;
             this.BuildOwnGroupBox.TabStop = false;
             // 
-            // PineappleLeftPictureBox
+            // Resimler
             // 
             this.PineappleLeftPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PineappleLeftPictureBox.Image")));
             this.PineappleLeftPictureBox.Location = new System.Drawing.Point(118, 394);
@@ -584,7 +582,7 @@
             this.PineappleLeftPictureBox.TabStop = false;
             this.PineappleLeftPictureBox.Click += new System.EventHandler(this.PineappleLeftPictureBox_Click);
             // 
-            // PineappleRightPictureBox
+            // 
             // 
             this.PineappleRightPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PineappleRightPictureBox.Image")));
             this.PineappleRightPictureBox.Location = new System.Drawing.Point(240, 394);
@@ -594,7 +592,7 @@
             this.PineappleRightPictureBox.TabStop = false;
             this.PineappleRightPictureBox.Click += new System.EventHandler(this.PineappleRightPictureBox_Click);
             // 
-            // PineappleWholePictureBox
+            // 
             // 
             this.PineappleWholePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PineappleWholePictureBox.Image")));
             this.PineappleWholePictureBox.Location = new System.Drawing.Point(182, 394);
@@ -604,7 +602,7 @@
             this.PineappleWholePictureBox.TabStop = false;
             this.PineappleWholePictureBox.Click += new System.EventHandler(this.PineappleWholePictureBox_Click);
             // 
-            // SpinachRightPictureBox
+            // 
             // 
             this.SpinachRightPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SpinachRightPictureBox.Image")));
             this.SpinachRightPictureBox.Location = new System.Drawing.Point(240, 352);
@@ -614,7 +612,7 @@
             this.SpinachRightPictureBox.TabStop = false;
             this.SpinachRightPictureBox.Click += new System.EventHandler(this.SpinachRightPictureBox_Click);
             // 
-            // SpinachWholePictureBox
+            // 
             // 
             this.SpinachWholePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SpinachWholePictureBox.Image")));
             this.SpinachWholePictureBox.Location = new System.Drawing.Point(182, 352);
@@ -624,7 +622,7 @@
             this.SpinachWholePictureBox.TabStop = false;
             this.SpinachWholePictureBox.Click += new System.EventHandler(this.SpinachWholePictureBox_Click);
             // 
-            // MushroomWholePictureBox
+            // 
             // 
             this.MushroomWholePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("MushroomWholePictureBox.Image")));
             this.MushroomWholePictureBox.Location = new System.Drawing.Point(182, 264);
@@ -634,7 +632,7 @@
             this.MushroomWholePictureBox.TabStop = false;
             this.MushroomWholePictureBox.Click += new System.EventHandler(this.MushroomWholePictureBox_Click);
             // 
-            // PeppersRightPictureBox
+            // 
             // 
             this.PeppersRightPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PeppersRightPictureBox.Image")));
             this.PeppersRightPictureBox.Location = new System.Drawing.Point(240, 229);
@@ -644,7 +642,7 @@
             this.PeppersRightPictureBox.TabStop = false;
             this.PeppersRightPictureBox.Click += new System.EventHandler(this.PeppersRightPictureBox_Click);
             // 
-            // MushroomRightPictureBox
+            // 
             // 
             this.MushroomRightPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("MushroomRightPictureBox.Image")));
             this.MushroomRightPictureBox.Location = new System.Drawing.Point(240, 264);
@@ -654,7 +652,7 @@
             this.MushroomRightPictureBox.TabStop = false;
             this.MushroomRightPictureBox.Click += new System.EventHandler(this.MushroomRightPictureBox_Click);
             // 
-            // SpinachLeftPictureBox
+            // 
             // 
             this.SpinachLeftPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SpinachLeftPictureBox.Image")));
             this.SpinachLeftPictureBox.Location = new System.Drawing.Point(118, 352);
@@ -664,7 +662,7 @@
             this.SpinachLeftPictureBox.TabStop = false;
             this.SpinachLeftPictureBox.Click += new System.EventHandler(this.SpinachLeftPictureBox_Click);
             // 
-            // JalapenoWholePictureBox
+            // 
             // 
             this.JalapenoWholePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("JalapenoWholePictureBox.Image")));
             this.JalapenoWholePictureBox.Location = new System.Drawing.Point(182, 307);
@@ -674,7 +672,7 @@
             this.JalapenoWholePictureBox.TabStop = false;
             this.JalapenoWholePictureBox.Click += new System.EventHandler(this.JalapenoWholePictureBox_Click);
             // 
-            // JalapenoRightPictureBox
+            // 
             // 
             this.JalapenoRightPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("JalapenoRightPictureBox.Image")));
             this.JalapenoRightPictureBox.Location = new System.Drawing.Point(240, 307);
@@ -684,7 +682,7 @@
             this.JalapenoRightPictureBox.TabStop = false;
             this.JalapenoRightPictureBox.Click += new System.EventHandler(this.JalapenoRightPictureBox_Click);
             // 
-            // MushroomLeftPictureBox
+            // 
             // 
             this.MushroomLeftPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("MushroomLeftPictureBox.Image")));
             this.MushroomLeftPictureBox.Location = new System.Drawing.Point(118, 264);
@@ -694,7 +692,7 @@
             this.MushroomLeftPictureBox.TabStop = false;
             this.MushroomLeftPictureBox.Click += new System.EventHandler(this.MushroomLeftPictureBox_Click);
             // 
-            // JalapenoLeftPictureBox
+            // 
             // 
             this.JalapenoLeftPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("JalapenoLeftPictureBox.Image")));
             this.JalapenoLeftPictureBox.Location = new System.Drawing.Point(118, 307);
@@ -704,7 +702,7 @@
             this.JalapenoLeftPictureBox.TabStop = false;
             this.JalapenoLeftPictureBox.Click += new System.EventHandler(this.JalapenoLeftPictureBox_Click);
             // 
-            // PeppersWholePictureBox
+            // 
             // 
             this.PeppersWholePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PeppersWholePictureBox.Image")));
             this.PeppersWholePictureBox.Location = new System.Drawing.Point(182, 229);
@@ -714,7 +712,7 @@
             this.PeppersWholePictureBox.TabStop = false;
             this.PeppersWholePictureBox.Click += new System.EventHandler(this.PeppersWholePictureBox_Click);
             // 
-            // PeppersLeftPictureBox
+            // 
             // 
             this.PeppersLeftPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PeppersLeftPictureBox.Image")));
             this.PeppersLeftPictureBox.Location = new System.Drawing.Point(118, 229);
@@ -724,7 +722,7 @@
             this.PeppersLeftPictureBox.TabStop = false;
             this.PeppersLeftPictureBox.Click += new System.EventHandler(this.PeppersLeftPictureBox_Click);
             // 
-            // OnionsRightPictureBox
+            // 
             // 
             this.OnionsRightPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("OnionsRightPictureBox.Image")));
             this.OnionsRightPictureBox.Location = new System.Drawing.Point(240, 191);
@@ -734,7 +732,7 @@
             this.OnionsRightPictureBox.TabStop = false;
             this.OnionsRightPictureBox.Click += new System.EventHandler(this.OnionsRightPictureBox_Click);
             // 
-            // OnionsWholePictureBox
+            // 
             // 
             this.OnionsWholePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("OnionsWholePictureBox.Image")));
             this.OnionsWholePictureBox.Location = new System.Drawing.Point(182, 191);
@@ -744,7 +742,7 @@
             this.OnionsWholePictureBox.TabStop = false;
             this.OnionsWholePictureBox.Click += new System.EventHandler(this.OnionsWholePictureBox_Click);
             // 
-            // OnionsLeftPictureBox
+            // 
             // 
             this.OnionsLeftPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("OnionsLeftPictureBox.Image")));
             this.OnionsLeftPictureBox.Location = new System.Drawing.Point(118, 191);
@@ -754,11 +752,11 @@
             this.OnionsLeftPictureBox.TabStop = false;
             this.OnionsLeftPictureBox.Click += new System.EventHandler(this.OnionsLeftPictureBox_Click);
             // 
-            // printDialog1
+            // 
             // 
             this.printDialog1.UseEXDialog = true;
             // 
-            // PizzaPictureBox
+            // 
             // 
             this.PizzaPictureBox.Location = new System.Drawing.Point(12, 290);
             this.PizzaPictureBox.Name = "PizzaPictureBox";
@@ -766,7 +764,7 @@
             this.PizzaPictureBox.TabIndex = 19;
             this.PizzaPictureBox.TabStop = false;
             // 
-            // PizzaOrderForm
+            // 
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

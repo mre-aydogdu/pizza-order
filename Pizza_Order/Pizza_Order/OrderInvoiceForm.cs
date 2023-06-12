@@ -54,14 +54,14 @@ namespace Pizza_Order
             taxAmount = tax * total; // Calculating the tax amount
             SubTotal = total + taxAmount; // Calculating the total amount
 
-            PizzaPrice.Text = "$" + total.ToString("0.00"); // Prints upto two decimal places
-            taxPriceLabel.Text = "$" + taxAmount.ToString("0.00"); // Printing the tax price
-            TotalPrice.Text = "$" + SubTotal.ToString("0.00"); // Printing total price
+            PizzaPrice.Text = "₺" + total.ToString("0.00"); // Prints upto two decimal places
+            taxPriceLabel.Text = "₺" + taxAmount.ToString("0.00"); // Printing the tax price
+            TotalPrice.Text = "₺" + SubTotal.ToString("0.00"); // Printing total price
 
             // Message Box to show that the user has placed the order succesfully
 
-            MessageBox.Show("Your order has been received by us. Thank you and Enjoy!",
-                "VV's Pizza", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); 
+            MessageBox.Show("Siparisiniz Alinmistir, İyi günler Dileriz",
+                "Dodinos Pizza", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); 
                   
 
         }

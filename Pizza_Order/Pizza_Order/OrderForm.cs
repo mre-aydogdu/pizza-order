@@ -1,11 +1,9 @@
-﻿/* Vasudev Vijayaraman
- * 07/11/2017
- * Dr. Catherine Stringfellow
- * C# Programming
- * This is a program that replicates a pizza ordering app. 
- * User is able to select type, select toppings, select size, options for the customized pizza and
- * Select halves of the pizza they want topping to be added on. This is achieved by using RadioButtons, 
- * switch cases and mouse event handlers */
+﻿/* 
+ * C#
+ * Bu program bir pizza sipariş otomasyonunun demosu olacak şekilde hazırlamıştır. 
+ * Kullanıcı pizza tipini, büyüklüğünü, extra malzemeleri seçebilir
+ * Kullanıcı kendi pizzasını oluşturma seçeneğini de seçebilir, 
+ */
 
 
 using System;
@@ -191,7 +189,6 @@ namespace Pizza_Order
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If Onion topping is checked 
             if (OnionCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Soğanlı");
@@ -199,7 +196,6 @@ namespace Pizza_Order
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If Mushroom topping is checked 
             if (MushroomCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Mantarlı");
@@ -207,7 +203,6 @@ namespace Pizza_Order
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If Spinach topping is checked 
             if (SpinachCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Ispannaklı");
@@ -215,7 +210,6 @@ namespace Pizza_Order
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If Pineapple topping is checked 
             if (PineapplecheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Ananaslı");
@@ -223,7 +217,6 @@ namespace Pizza_Order
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If GreenPepper topping is checked 
             if (GreenPeppersCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Yeşil Biberli");
@@ -231,7 +224,6 @@ namespace Pizza_Order
                 order.SubTotalListView.Items.Add(item);
             }
 
-            // If Jalapeno topping is checked 
             if (JalapenoCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Jalapenolu");
@@ -240,15 +232,13 @@ namespace Pizza_Order
             }
 
 
-            order.Show(); // Shows the order invoice form because it is already instantiated
-            this.Hide(); // Hides the current form
+            order.Show(); // Sipraiş özetini gösteriyoruz
+            this.Hide(); // Açık olan formu gizliyoruz
 
 
         }
 
-        // This method handles the case when Alfredo Check box is checked.
-        // This is designed in such a way that the user can either choose alfredo
-        // or tomato sauce. 
+
 
         private void AlfredoCheckBox_CheckedChanged(object sender, EventArgs e)
         {
@@ -265,9 +255,6 @@ namespace Pizza_Order
 
         }
 
-        // This method handles the case when Tomato Check box is checked.
-        // This is designed in such a way that the user can either choose alfredo
-        // or tomato sauce. 
 
         private void TomatoCheckBox_CheckedChanged(object sender, EventArgs e)
         {
@@ -284,9 +271,8 @@ namespace Pizza_Order
             }
         }
 
-        // This method happens when the user wants to build their own pizza
-        // This program is built in such a way that the group containing toppings
-        // gets enabled only when the user chooses to customize their pizza
+        // Bu metod kullanıcı kendi pizzasını kendisi yapmak isterse çalışır
+        // Pizza customize edilebilir
 
         private void BuildOwnRadioButton_CheckedChanged(object sender, EventArgs e)
         {
@@ -300,32 +286,30 @@ namespace Pizza_Order
             }
         }
 
-        // This is the method that takes care when the user wants to put onions
-        // on the left hand side of the pizza. It prints a picture accordingly
+        //biraz daha görsellik katmak için seçilen çeşitlere göre ekrana resim ekliyoruz
 
         private void OnionsLeftPictureBox_Click(object sender, EventArgs e)
         {
             if (OnionCheckBox.Checked)
             {
 
-                OnionsLeftPictureBox.Image = leftSideSelected; // Select the left image 
-                OnionsWholePictureBox.Image = WholeUnselected; // Unselect the other
-                OnionsRightPictureBox.Image = RightUnselected; // Unselect the other
-                PizzaPictureBox.Image = leftSideOnion; // Prints the image
+                OnionsLeftPictureBox.Image = leftSideSelected; 
+                OnionsWholePictureBox.Image = WholeUnselected; 
+                OnionsRightPictureBox.Image = RightUnselected; 
+                PizzaPictureBox.Image = leftSideOnion; 
 
             }
         }
 
-        // This is the method that takes care when the user wants to put onions
-        // on the whole pizza. It prints a picture accordingly
+       
 
         private void OnionsWholePictureBox_Click(object sender, EventArgs e)
         {
             if (OnionCheckBox.Checked)
             {
-                OnionsWholePictureBox.Image = Wholeselected; // Select the left image
-                OnionsLeftPictureBox.Image = leftSideUnselected; // Unselect the other
-                OnionsRightPictureBox.Image = RightUnselected; // Unselect the other
+                OnionsWholePictureBox.Image = Wholeselected; 
+                OnionsLeftPictureBox.Image = leftSideUnselected; 
+                OnionsRightPictureBox.Image = RightUnselected; 
                 PizzaPictureBox.Image = OnionPizza;
 
 
@@ -333,237 +317,211 @@ namespace Pizza_Order
         }
 
 
-        // This is the method that takes care when the user wants to put onions
-        // on the right hand side of the pizza. It prints a picture accordingly
+        
 
         private void OnionsRightPictureBox_Click(object sender, EventArgs e)
         {
             if (OnionCheckBox.Checked)
             {
 
-                OnionsRightPictureBox.Image = RightSelected; // Select the left image
-                OnionsLeftPictureBox.Image = leftSideUnselected; // Unselect the other
-                OnionsWholePictureBox.Image = WholeUnselected; // Unselect the other
+                OnionsRightPictureBox.Image = RightSelected; 
+                OnionsLeftPictureBox.Image = leftSideUnselected; 
+                OnionsWholePictureBox.Image = WholeUnselected; 
                 PizzaPictureBox.Image = RHOnion;
             }
         }
 
-        // This is the method that takes care when the user wants to put Green peppers
-        // on the left hand side of the pizza. It prints a picture accordingly
-
+        
         private void PeppersLeftPictureBox_Click(object sender, EventArgs e)
         {
             if (GreenPeppersCheckBox.Checked)
             {
                 PeppersLeftPictureBox.Image = leftSideSelected;
-                PeppersWholePictureBox.Image = WholeUnselected; // Unselect the other
-                PeppersRightPictureBox.Image = RightUnselected; // Unselect the other
+                PeppersWholePictureBox.Image = WholeUnselected;
+                PeppersRightPictureBox.Image = RightUnselected; 
                 PizzaPictureBox.Image = LeftHalfPepper;
             }
         }
 
-        // This is the method that takes care when the user wants to put Green peppers
-        // on the whole pizza. It prints a picture accordingly
+        
 
         private void PeppersWholePictureBox_Click(object sender, EventArgs e)
         {
             if (GreenPeppersCheckBox.Checked)
             {
                 PeppersWholePictureBox.Image = Wholeselected;
-                PeppersLeftPictureBox.Image = leftSideUnselected; // Unselect the other
-                PeppersRightPictureBox.Image = RightUnselected; // Unselect the other
+                PeppersLeftPictureBox.Image = leftSideUnselected; 
+                PeppersRightPictureBox.Image = RightUnselected; 
                 PizzaPictureBox.Image = PeppersPizza;
             }
         }
 
-        // This is the method that takes care when the user wants to put Green peppers
-        // on the right hand side of the pizza. It prints a picture accordingly
-
+       
         private void PeppersRightPictureBox_Click(object sender, EventArgs e)
         {
             if (GreenPeppersCheckBox.Checked)
             {
                 PeppersRightPictureBox.Image = RightSelected;
-                PeppersLeftPictureBox.Image = leftSideUnselected; // Unselect the other
-                PeppersWholePictureBox.Image = WholeUnselected; // Unselect the other
+                PeppersLeftPictureBox.Image = leftSideUnselected;
+                PeppersWholePictureBox.Image = WholeUnselected; 
                 PizzaPictureBox.Image = RHPepper;
             }
 
         }
 
-        // This is the method that takes care when the user wants to put Mushrooms
-        // on the left hand side of the pizza. Decided not to have a picture for this for
-        // a change
-
+       
         private void MushroomLeftPictureBox_Click(object sender, EventArgs e)
         {
             if (MushroomCheckBox.Checked)
             {
                 MushroomLeftPictureBox.Image = leftSideSelected;
-                MushroomWholePictureBox.Image = WholeUnselected; // Unselect the other
-                MushroomRightPictureBox.Image = RightUnselected; // Unselect the other
+                MushroomWholePictureBox.Image = WholeUnselected; 
+                MushroomRightPictureBox.Image = RightUnselected; 
             }
 
         }
 
-        // This is the method that takes care when the user wants to put Jalapenos
-        // on the left hand side of the pizza. It prints a picture accordingly
-
+        
         private void JalapenoLeftPictureBox_Click(object sender, EventArgs e)
         {
             if (JalapenoCheckBox.Checked)
             {
                 JalapenoLeftPictureBox.Image = leftSideSelected;
-                JalapenoWholePictureBox.Image = WholeUnselected; // Unselect the other
-                JalapenoRightPictureBox.Image = RightUnselected; // Unselect the other
+                JalapenoWholePictureBox.Image = WholeUnselected; // İşaretlemeyi iptal et
+                JalapenoRightPictureBox.Image = RightUnselected; // İşaretlemeyi iptal et
                 PizzaPictureBox.Image = leftSideJalapeno;
             }
         }
 
-        // This is the method that takes care when the user wants to put Spinach
-        // on the left hand side of the pizza. It prints a picture accordingly
+    
 
         private void SpinachLeftPictureBox_Click(object sender, EventArgs e)
         {
             if (SpinachCheckBox.Checked)
             {
                 SpinachLeftPictureBox.Image = leftSideSelected;
-                SpinachWholePictureBox.Image = WholeUnselected; // Unselect the other
-                SpinachRightPictureBox.Image = RightUnselected; // Unselect the other
+                SpinachWholePictureBox.Image = WholeUnselected; // İşaretlemeyi iptal et
+                SpinachRightPictureBox.Image = RightUnselected; // İşaretlemeyi iptal et
                 PizzaPictureBox.Image = leftSideSpinach;
 
             }
         }
 
-        // This is the method that takes care when the user wants to put Pineapple
-        // on the left hand side of the pizza. It prints a picture accordingly. Pineapple 
-        // does not exist in pizza btw. 
-
+        
         private void PineappleLeftPictureBox_Click(object sender, EventArgs e)
         {
             if (PineapplecheckBox.Checked)
             {
                 PineappleLeftPictureBox.Image = leftSideSelected;
-                PineappleWholePictureBox.Image = WholeUnselected; // Unselect the other
-                PineappleRightPictureBox.Image = RightUnselected; // Unselect the other
+                PineappleWholePictureBox.Image = WholeUnselected; // İşaretlemeyi iptal et
+                PineappleRightPictureBox.Image = RightUnselected; // İşaretlemeyi iptal et
                 PizzaPictureBox.Image = LHPineapple;
             }
         }
 
-        // This is the method that takes care when the user wants to put Mushrooms
-        // on the whole pizza. It prints a picture accordingly
+        
 
         private void MushroomWholePictureBox_Click(object sender, EventArgs e)
         {
             if (MushroomCheckBox.Checked)
             {
                 MushroomWholePictureBox.Image = Wholeselected;
-                MushroomLeftPictureBox.Image = leftSideUnselected; // Unselect the other
-                MushroomRightPictureBox.Image = RightUnselected; // Unselect the other
+                MushroomLeftPictureBox.Image = leftSideUnselected; // İşaretlemeyi iptal et
+                MushroomRightPictureBox.Image = RightUnselected; // İşaretlemeyi iptal et
                 PizzaPictureBox.Image = MushroomPizza;
             }
         }
 
-        // This is the method that takes care when the user wants to put Jalapeno
-        // on the whole pizza. It prints a picture accordingly
+        
 
         private void JalapenoWholePictureBox_Click(object sender, EventArgs e)
         {
             if (JalapenoCheckBox.Checked)
             {
                 JalapenoWholePictureBox.Image = Wholeselected;
-                JalapenoLeftPictureBox.Image = leftSideUnselected; // Unselect the other
-                JalapenoRightPictureBox.Image = RightUnselected; // Unselect the other
+                JalapenoLeftPictureBox.Image = leftSideUnselected; // İşaretlemeyi iptal et
+                JalapenoRightPictureBox.Image = RightUnselected; // İşaretlemeyi iptal et
                 PizzaPictureBox.Image = JalapenoPizza;
             }
         }
 
-        // This is the method that takes care when the user wants to put Spinach
-        // on the whole pizza. It prints a picture accordingly
+        
 
         private void SpinachWholePictureBox_Click(object sender, EventArgs e)
         {
             if (SpinachCheckBox.Checked)
             {
                 SpinachWholePictureBox.Image = Wholeselected;
-                SpinachLeftPictureBox.Image = leftSideUnselected; // Unselect the other
-                SpinachRightPictureBox.Image = RightUnselected; // Unselect the other
+                SpinachLeftPictureBox.Image = leftSideUnselected; // İşaretlemeyi iptal et
+                SpinachRightPictureBox.Image = RightUnselected; // İşaretlemeyi iptal et
                 PizzaPictureBox.Image = SpinachPizza;
             }
         }
 
-        // This is the method that takes care when the user wants to put Pineapple
-        // on the whole pizza. It prints a picture accordingly. Nasty Pineapple again.
 
         private void PineappleWholePictureBox_Click(object sender, EventArgs e)
         {
             if (PineapplecheckBox.Checked)
             {
                 PineappleWholePictureBox.Image = Wholeselected;
-                PineappleLeftPictureBox.Image = leftSideUnselected; // Unselect the other
-                PineappleRightPictureBox.Image = RightUnselected; // Unselect the other
+                PineappleLeftPictureBox.Image = leftSideUnselected; // İşaretlemeyi iptal et
+                PineappleRightPictureBox.Image = RightUnselected; // İşaretlemeyi iptal et
                 PizzaPictureBox.Image = PineapplePizza;
             }
         }
 
-        // This is the method that takes care when the user wants to put Mushrooms
-        // on the right hand side of the pizza. It prints a picture accordingly
-
+        
         private void MushroomRightPictureBox_Click(object sender, EventArgs e)
         {
             if (MushroomCheckBox.Checked)
             {
                 MushroomRightPictureBox.Image = RightSelected;
-                MushroomLeftPictureBox.Image = leftSideUnselected; // Unselect the other
-                MushroomWholePictureBox.Image = WholeUnselected; // Unselect the other
+                MushroomLeftPictureBox.Image = leftSideUnselected; // İşaretlemeyi iptal et
+                MushroomWholePictureBox.Image = WholeUnselected; // İşaretlemeyi iptal et
                 PizzaPictureBox.Image = RHMushroom;
             }
         }
 
-        // This is the method that takes care when the user wants to put Jalapeno
-        // on the right hand side of the pizza. It prints a picture accordingly
+        
 
         private void JalapenoRightPictureBox_Click(object sender, EventArgs e)
         {
             if (JalapenoCheckBox.Checked)
             {
                 JalapenoRightPictureBox.Image = RightSelected;
-                JalapenoLeftPictureBox.Image = leftSideUnselected; // Unselect the other
-                JalapenoWholePictureBox.Image = WholeUnselected; // Unselect the other
+                JalapenoLeftPictureBox.Image = leftSideUnselected; // İşaretlemeyi iptal et
+                JalapenoWholePictureBox.Image = WholeUnselected; 
                 PizzaPictureBox.Image = RHJalapeno;
             }
         }
 
-        // This is the method that takes care when the user wants to put Spinach
-        // on the right hand side of the pizza. No picture printed.
+        
 
         private void SpinachRightPictureBox_Click(object sender, EventArgs e)
         {
             if (SpinachCheckBox.Checked)
             {
                 SpinachRightPictureBox.Image = RightSelected;
-                SpinachLeftPictureBox.Image = leftSideUnselected; // Unselect the other
-                SpinachWholePictureBox.Image = WholeUnselected; // Unselect the other
+                SpinachLeftPictureBox.Image = leftSideUnselected; 
+                SpinachWholePictureBox.Image = WholeUnselected; 
             }
         }
 
-        // This is the method that takes care when the user wants to put Pineapple
-        // on the right hand side of the pizza. It prints a picture accordingly.
-        // Atleast you chose it just to put it on one side.
+        
 
         private void PineappleRightPictureBox_Click(object sender, EventArgs e)
         {
             if (PineapplecheckBox.Checked)
             {
                 PineappleRightPictureBox.Image = RightSelected;
-                PineappleLeftPictureBox.Image = leftSideUnselected; // Unselect the other
-                PineappleWholePictureBox.Image = WholeUnselected; // Unselect the other
+                PineappleLeftPictureBox.Image = leftSideUnselected; 
+                PineappleWholePictureBox.Image = WholeUnselected; 
                 PizzaPictureBox.Image = RHPineapple;
             }
         }
 
-        // This method executes when the Pizza Order form loads. It  prints a default pizza
-        // image. 
+        // Bu default bir pizza resmini genel ekranda görmek için kullanılıyor
+        
 
         private void PizzaOrderForm_Load(object sender, EventArgs e)
         {

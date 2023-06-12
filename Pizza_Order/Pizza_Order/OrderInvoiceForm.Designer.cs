@@ -89,7 +89,7 @@
             this.PizzaPrice.Name = "PizzaPrice";
             this.PizzaPrice.Size = new System.Drawing.Size(34, 13);
             this.PizzaPrice.TabIndex = 3;
-            this.PizzaPrice.Text = "$0.00";
+            this.PizzaPrice.Text = "₺0.00";
             // 
             // taxPriceLabel
             // 
@@ -98,7 +98,7 @@
             this.taxPriceLabel.Name = "taxPriceLabel";
             this.taxPriceLabel.Size = new System.Drawing.Size(34, 13);
             this.taxPriceLabel.TabIndex = 4;
-            this.taxPriceLabel.Text = "$0.00";
+            this.taxPriceLabel.Text = "₺0.00";
             // 
             // totalPriceLabel
             // 
@@ -119,7 +119,7 @@
             this.TotalPrice.Name = "TotalPrice";
             this.TotalPrice.Size = new System.Drawing.Size(39, 13);
             this.TotalPrice.TabIndex = 6;
-            this.TotalPrice.Text = "$0.00";
+            this.TotalPrice.Text = "₺0.00";
             // 
             // ExitButton
             // 
