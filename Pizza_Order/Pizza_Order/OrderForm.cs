@@ -99,7 +99,7 @@ namespace Pizza_Order
                 
                 ListViewItem item = new ListViewItem("Personel Pizzası Boyutu");
                 item.SubItems.Add("5.99");
-                order.SubTotalListView.Items.Add(item); // add it to the list view
+                order.SubTotalListView.Items.Add(item);
             }
             // Küçük pizza boyutu seçilmiş ise
             else if (SmallRadioButton.Checked == true)

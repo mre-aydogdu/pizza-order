@@ -1,6 +1,5 @@
-﻿// Vasudev Vijayaraman
-// This is the main file which starts the execution of the program. 
-// It starts running the Pizza Order Form
+﻿// Programın ilk çalışmaya başladığı dosyadır. 
+// Pizza Order Form'u çalıştırarak başlatır
 
 using System;
 using System.Collections.Generic;
@@ -12,9 +11,7 @@ namespace Pizza_Order
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+        
         [STAThread]
         static void Main()
         {
