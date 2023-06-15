@@ -98,14 +98,14 @@ namespace Pizza_Order
             {
                 
                 ListViewItem item = new ListViewItem("Personel Pizzası Boyutu");
-                item.SubItems.Add("50");
+                item.SubItems.Add("5.99");
                 order.SubTotalListView.Items.Add(item); // add it to the list view
             }
             // Küçük pizza boyutu seçilmiş ise
             else if (SmallRadioButton.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Küçük Pizza Boyutu");
-                item.SubItems.Add("70");
+                item.SubItems.Add("7.99");
                 order.SubTotalListView.Items.Add(item);
             }
 
@@ -113,7 +113,7 @@ namespace Pizza_Order
             else if (MediumRadioButton.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Orta Pizza Boyutu");
-                item.SubItems.Add("90");
+                item.SubItems.Add("9.99");
                 order.SubTotalListView.Items.Add(item);
             }
 
@@ -121,7 +121,7 @@ namespace Pizza_Order
             else if (LargeRadioButton.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Büyük Pizza Boyutu");
-                item.SubItems.Add("120");
+                item.SubItems.Add("12.99");
                 order.SubTotalListView.Items.Add(item);
             }
 

@@ -1,10 +1,4 @@
-﻿/* Vasudev Vijayaraman
- * This form is where the calculation of cost is done and taxes are added to it.
- * Final price can hence be seen. You can also the current order including the toppings.
- * Has an exit button that exits the application.
- */
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,41 +18,40 @@ namespace Pizza_Order
         }
 
 
-        // This method is executed when the user clicks the exit Button.
-        // The application just exits. This also makes sure the processes gets shut off 
-        // correctly
+        // Bu fonksiyon kullanıcı çıkış tuşuna bastığında çalışır.
+        // Uygulamayı düzgün bir şekilde kapatmak için.
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        // This method executes when the user confirms his order after he sees it on the screen.
-        // This is where the final price of the pizza is also calculated and printed.
+
+        //Bu metod kullanıcı siparişini ekranda görüp onayladıktan sonra çalışıyor
+        // Pizzanın son fiyatı hesaplanıp burda görüntüleniyor
 
         private void ConfirmOrder_Click(object sender, EventArgs e)
         {
-            double tax = 0.08; // 8% tax held in a double
-            double taxAmount = 0.00; // Tax amount
-            double SubTotal = 0.00; // Total Price including tax
-            double total = 0.00; // total price before taxes
+            double tax = 0.18; // %18 vergilendirme ekliyouz
+            double taxAmount = 0.00; 
+            double SubTotal = 0.00; 
+            double total = 0.00; 
       
-            // This loop adds all the numbers in the list view column to give the total 
-            // Easier to calculate the final total rather than keeping track 
-
+            // bu döngü toplam ücreti vermesi için listedeki bütün ürünleri topluyor 
+            
             foreach (ListViewItem item in SubTotalListView.Items)
             {
-                total += Convert.ToDouble(item.SubItems[1].Text);  // Second column
+                total += Convert.ToDouble(item.SubItems[1].Text);
             }
 
-            taxAmount = tax * total; // Calculating the tax amount
-            SubTotal = total + taxAmount; // Calculating the total amount
+            taxAmount = tax * total; 
+            SubTotal = total + taxAmount; 
 
-            PizzaPrice.Text = "₺" + total.ToString("0.00"); // Prints upto two decimal places
-            taxPriceLabel.Text = "₺" + taxAmount.ToString("0.00"); // Printing the tax price
-            TotalPrice.Text = "₺" + SubTotal.ToString("0.00"); // Printing total price
+            PizzaPrice.Text = "₺" + total.ToString("0.00"); 
+            taxPriceLabel.Text = "₺" + taxAmount.ToString("0.00"); 
+            TotalPrice.Text = "₺" + SubTotal.ToString("0.00"); 
 
-            // Message Box to show that the user has placed the order succesfully
+            // siparişin oluştuğuna dair bildirim ekranı
 
             MessageBox.Show("Siparisiniz Alinmistir, İyi günler Dileriz",
                 "Dodinos Pizza", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); 
