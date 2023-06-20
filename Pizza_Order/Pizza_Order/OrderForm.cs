@@ -53,20 +53,20 @@ namespace Pizza_Order
         public double Small = 7.99;
         public double Medium = 9.99;
         public double Large = 12.99;
-        public double Alfredo = 0.99;
-        public double Tomato = 0.99;
-        public double Cheddar = 0.99;
-        public double Mozarella = 0.99;
-        public double Feta = 0.99;
-        public double Chicken = 0.99;
-        public double Pepperoni = 0.99;
-        public double Sausage = 0.99;
-        public double Onions = 0.99;
-        public double Peppers = 0.99;
-        public double Mushroom = 0.99;
-        public double Jalapeno = 0.99;
-        public double Spinach = 0.99;
-        public double Pineapple = 0.99;
+        public double Alfredo = 1;
+        public double Tomato = 1;
+        public double Cheddar = 1;
+        public double Mozarella = 1;
+        public double Feta = 1;
+        public double Chicken = 1;
+        public double Pepperoni = 1;
+        public double Sausage = 1;
+        public double Onions = 1;
+        public double Peppers = 1;
+        public double Mushroom = 1;
+        public double Jalapeno = 1;
+        public double Spinach = 1;
+        public double Pineapple = 1;
 
         // Sipariş Fatura formunu oluşturduk
         public static OrderInvoiceForm order = new OrderInvoiceForm();
@@ -129,7 +129,7 @@ namespace Pizza_Order
             if (CheddarCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Cheddar Peynirli");
-                item.SubItems.Add("0.99");
+                item.SubItems.Add("1");
                 order.SubTotalListView.Items.Add(item);
             }
 
@@ -137,7 +137,7 @@ namespace Pizza_Order
             if (AlfredoCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Alfredo Soslu");
-                item.SubItems.Add("0.99");
+                item.SubItems.Add("1");
                 order.SubTotalListView.Items.Add(item);
             }
 
@@ -145,7 +145,7 @@ namespace Pizza_Order
             if (TomatoCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Domates Soslu");
-                item.SubItems.Add("0.99");
+                item.SubItems.Add("1");
                 order.SubTotalListView.Items.Add(item);
             }
 
@@ -153,7 +153,7 @@ namespace Pizza_Order
             if (MozarellaCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Mozarella Peynirli");
-                item.SubItems.Add("0.99");
+                item.SubItems.Add("1");
                 order.SubTotalListView.Items.Add(item);
             }
 
@@ -161,7 +161,7 @@ namespace Pizza_Order
             if (FetaCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Beyaz Peynirli");
-                item.SubItems.Add("0.99");
+                item.SubItems.Add("1");
                 order.SubTotalListView.Items.Add(item);
             }
 
@@ -169,7 +169,7 @@ namespace Pizza_Order
             if (ChickenCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Tavuklu");
-                item.SubItems.Add("0.99");
+                item.SubItems.Add("1");
                 order.SubTotalListView.Items.Add(item);
             }
 
@@ -177,7 +177,7 @@ namespace Pizza_Order
             if (PepperoniCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Pepperonili");
-                item.SubItems.Add("0.99");
+                item.SubItems.Add("1");
                 order.SubTotalListView.Items.Add(item);
             }
 
@@ -185,49 +185,49 @@ namespace Pizza_Order
             if (SausageCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Sosisli");
-                item.SubItems.Add("0.99");
+                item.SubItems.Add("1");
                 order.SubTotalListView.Items.Add(item);
             }
 
             if (OnionCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Soğanlı");
-                item.SubItems.Add("0.99");
+                item.SubItems.Add("1");
                 order.SubTotalListView.Items.Add(item);
             }
 
             if (MushroomCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Mantarlı");
-                item.SubItems.Add("0.99");
+                item.SubItems.Add("1");
                 order.SubTotalListView.Items.Add(item);
             }
 
             if (SpinachCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Ispannaklı");
-                item.SubItems.Add("0.99");
+                item.SubItems.Add("1");
                 order.SubTotalListView.Items.Add(item);
             }
 
             if (PineapplecheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Ananaslı");
-                item.SubItems.Add("0.99");
+                item.SubItems.Add("1");
                 order.SubTotalListView.Items.Add(item);
             }
 
             if (GreenPeppersCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Yeşil Biberli");
-                item.SubItems.Add("0.99");
+                item.SubItems.Add("1");
                 order.SubTotalListView.Items.Add(item);
             }
 
             if (JalapenoCheckBox.Checked == true)
             {
                 ListViewItem item = new ListViewItem("Jalapenolu");
-                item.SubItems.Add("0.99");
+                item.SubItems.Add("1");
                 order.SubTotalListView.Items.Add(item);
             }
 
